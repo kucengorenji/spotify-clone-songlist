@@ -1,10 +1,8 @@
-import SearchTrack from './Pages/SearchTrack';
-import LandingPage from './Pages/LandingPage';
+import IndexPage from './Pages'
+
 
 export default function App() {
-  return authenticationInfo.isAuthenticated ? (
-    <SearchTrack accessToken={authenticationInfo.access_token} />
-  ) : (
-    <LandingPage />
+  return (
+    <IndexPage />
   )
  }

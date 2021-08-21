@@ -1,16 +1,18 @@
-import {useState} from 'react'
 import style from './style.module.css'
 
-const SearchBar = props => {
+import {useState} from 'react'
+
+const SearchBar = (props) => {
+
     const [query, setQuery] = useState('')
 
-    const handleChange = e => {
-        setQuery(e.target.value)
+    const handleChange = event => {
+        setQuery(event.target.value)
     }
 
-    const handleSearch = e => {
-        e.preventDefault()
-        query ? props.handleSearch(query) : alert('Pwease input the query')
+    const handleSearch = event => {
+        event.preventDefault()
+        query ? props.handleSearch(query) : alert('fill search-form first.')
     }
     
     return (
@@ -21,4 +23,4 @@ const SearchBar = props => {
     )
 }
 
-export default SearchBar
+export default SearchBar;
