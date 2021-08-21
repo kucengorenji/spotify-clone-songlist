@@ -33,4 +33,4 @@ Features of spotify clone:
 ### 3. in the terminal type "npm install" to initiate the project
 ### 4. type "npm run start"
 
-*you need to change the REACT_APP
+*you need to change the env file for the spotify id to be able to login
