@@ -1,4 +1,4 @@
-
+import {  Button } from "@chakra-ui/react"
 import style from './style.module.css'
 
 const Track = ({ track, handleSelect, isSelected }) => {
@@ -21,9 +21,9 @@ const Track = ({ track, handleSelect, isSelected }) => {
         <p className={style.artist}>{artists}</p>
       </span>
       <span>
-        <button onClick={() => handleSelect(track.uri)}>
+        <Button onClick={() => handleSelect(track.uri)}>
           {isSelected ? 'Deselect' : 'Select'}
-        </button>
+        </Button>
       </span>
     </div>
   )

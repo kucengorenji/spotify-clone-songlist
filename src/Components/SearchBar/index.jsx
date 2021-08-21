@@ -12,7 +12,7 @@ const SearchBar = (props) => {
 
     const handleSearch = event => {
         event.preventDefault()
-        query ? props.handleSearch(query) : alert('fill search-form first.')
+        query ? props.handleSearch(query) : alert('please fill the form')
     }
     
     return (
