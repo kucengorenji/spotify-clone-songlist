@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-
 import SearchBar from '../Components/SearchBar';
 import PlaylistForm from '../Components/PlaylistForm';
 import Tracks from '../Components/Tracks'
@@ -11,8 +10,8 @@ import {
     postPlaylist,
     postPlaylistTracks,
   } from '../Api/Spotify';
-
-import { storeUser } from '../store/auth'
+import { Container, Box } from "@chakra-ui/react";
+import { storeUser } from '../store/auth';
 
 export default function HomePage(props) {
   const user = useSelector(state => state.auth.user)
@@ -72,33 +71,31 @@ export default function HomePage(props) {
   }
 
   return (
-    <div>
+    <Container maxW="container.lg">
       <SearchBar handleSearch={handleSearch} />
-      <main >
-        <div>
-          <h3>Tracks</h3>
+        <PlaylistForm
+          form={form}
+          handleSubmit={handleSubmit}
+          handleFormChanges={handleFormChanges}
+        />
+
           {isLoading ? (
             <h3>Loading...</h3>
           ) : (
             tracks.map(track => {
               const isSelected = selectedTracks.includes(track.uri)
               return (
-                <Tracks
-                  track={track}
-                  handleSelect={handleSelect}
-                  isSelected={isSelected}
-                  key={track.id}
-                />
+                <Box>
+                  <Tracks
+                    track={track}
+                    handleSelect={handleSelect}
+                    isSelected={isSelected}
+                    key={track.id}
+                  />
+                </Box>
               )
             })
-          )}
-        </div>
-        <PlaylistForm
-          form={form}
-          handleSubmit={handleSubmit}
-          handleFormChanges={handleFormChanges}
-        />
-      </main>
-    </div>
+          )};
+    </Container>
   )
-}
+};

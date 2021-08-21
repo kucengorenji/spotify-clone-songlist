@@ -1,4 +1,4 @@
-.wrapper {
+.container {
     display: flex;
     align-items: center;
     padding: .75rem;
@@ -9,7 +9,7 @@
     cursor: pointer;
 }
 
-.wrapper:hover {
+.container:hover {
     transform: translateX(4px);
 }
 
@@ -23,7 +23,6 @@ a:hover {
 }
 
 .image {
-    border-radius: 16px;
     margin-right: .75rem;
 }
 
@@ -39,32 +38,4 @@ a:hover {
 }
 .info {
     flex: 2;
-}
-
-.action {
-    flex: 1;
-    text-align: right;
-}
-
-.action button {
-    outline: none;
-    border: none;
-    border-radius: 16px;
-    margin-left: 1rem;
-    padding: 1rem;
-    color: white;
-    background-color: green;
-    opacity: .8;
-    font-size: 1em;
-    font-weight: 400;
-    cursor: pointer;
-    transition: all 150ms ease-out;
-}
-
-.action button:hover {
-    opacity: 1;
-}
-
-.action button a {
-    color: white;
 }

@@ -14,13 +14,13 @@ const Track = ({ track, handleSelect, isSelected }) => {
   const image = track.album.images.find(image => image.width === 64)
 
   return (
-    <div className={style.wrapper}>
+    <div className={style.container}>
       <img className={style.image} src={image.url} alt="" />
       <span className={style.info}>
         <p className={style.title}>{track.name}</p>
         <p className={style.artist}>{artists}</p>
       </span>
-      <span className={style.action}>
+      <span>
         <button onClick={() => handleSelect(track.uri)}>
           {isSelected ? 'Deselect' : 'Select'}
         </button>
