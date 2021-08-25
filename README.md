@@ -1,3 +1,6 @@
+![image info](./generasi-gigih.png)
+
+
 # Front End Class Final Project
 
 This project is created for final submission in generasi-gigih intermediate class. the project was initially created from weekly submission of the technical class. 
