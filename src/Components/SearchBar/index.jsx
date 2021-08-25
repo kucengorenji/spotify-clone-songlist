@@ -25,7 +25,7 @@ const SearchBar = (props) => {
             
             <Grid m={4}>
                 <Input m={3} type="text" name="query" placeholder="Search..." onChange={handleChange} value={query} />
-                <Button colorScheme="teal" size="lg" type="submit" value="Search">Cari</Button>
+                <Button colorScheme="teal" size="lg" type="submit" value="Search">Search</Button>
             </Grid>
         </form>
     )

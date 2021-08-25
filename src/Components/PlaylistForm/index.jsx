@@ -22,7 +22,7 @@ const PlaylistForm = ({ form, handleSubmit, handleFormChanges }) => {
               onChange={handleFormChanges}
               value={form.description}
             ></Input>
-            <Button m={3} type="submit" value="Create">Buat playlist</Button>
+            <Button m={3} type="submit" value="Create">Create playlist</Button>
           </Grid>
         </form>
       </Container>
