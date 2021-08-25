@@ -29,4 +29,4 @@ const Track = ({ track, handleSelect, isSelected }) => {
   )
 }
 
-export default Track
+export default Track;

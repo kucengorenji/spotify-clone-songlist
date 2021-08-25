@@ -7,30 +7,31 @@ This project is created for final submission in generasi-gigih intermediate clas
 this project is intended to be a clone of spotify app to be created with such tech-stack requirement:
 - React
 - Redux
-- React-Router
+- React-Router*
 - React UI Library
-- TypeScript
+- TypeScript*
 
 Features of spotify clone:
-  a. Login using spotify account
-  b. Search songs
-  c. List down searched songs, and make them selectable
-  d. Create playlist
-    i.   With the following fields
+  - a. Login using spotify account
+  - b. Search songs
+  - c. List down searched songs, and make them selectable
+  - d. Create playlist feature
+    - i.   With the following fields:
+    
           1. Title, minimum 10 characters
           2. Description, minimum 20 characters
           3. A button to submit
-    ii.  When the button is clicked, create a new playlist with those title
+          
+    - ii.  When the button is clicked, create a new playlist with those title
          and description, with songs that were selected previously
-    iii. Use Get Current User's Profile, Create a Playlist, and Add Items to a
+    - iii. Use Get Current User's Profile, Create a Playlist, and Add Items to a
          Playlist API to achieve this. Read more in the API Docs
-    iv.  Playlist should be private and collaborative should be falses
+    - iv.  Playlist should be private and collaborative should be falses
 
 ## how to use this project :
+1. npm git clone git@github.com:kucengorenji/finale-project.git
+2. move to the folder 
+3. in the terminal type "npm install" to initiate the project
+4. type "npm run start"
 
-### 1. npm git clone git@github.com:kucengorenji/finale-project.git
-### 2. move to the folder 
-### 3. in the terminal type "npm install" to initiate the project
-### 4. type "npm run start"
-
-*you need to change the env file for the spotify id to be able to login
+*you need to change the env "REACT_APP_CLIENT_ID" file for the spotify id to be able to login
