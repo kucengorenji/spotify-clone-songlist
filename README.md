@@ -7,11 +7,11 @@ This project is created for final submission in generasi-gigih intermediate clas
 
 ## Spotify Clone
 
-this project is intended to be a clone of spotify app to be created with such tech-stack requirement:
+this project is intended to be a clone of spotify app to be created with tech-stack requirement:
 - React
 - Redux
 - React-Router*
-- React UI Library
+- React UI Library - Chakra UI
 - TypeScript*
 
 Features of spotify clone:
