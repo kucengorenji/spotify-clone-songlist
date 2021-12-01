@@ -12,7 +12,7 @@ this project is intended to be a clone of spotify app to be created with tech-st
 - Redux
 - React-Router*
 - React UI Library - Chakra UI
-- TypeScript*
+- TypeScript
 
 Features of spotify clone:
   - a. Login using spotify account
@@ -37,4 +37,4 @@ Features of spotify clone:
 3. in the terminal type "npm install" to initiate the project
 4. type "npm run start"
 
-*you need to change the env "REACT_APP_CLIENT_ID" file for the spotify id to be able to login
+note: you need to change the env "REACT_APP_CLIENT_ID" file for the spotify id to be able to login
